@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bbc6f4c4-2418-4ea2-9d6c-7812f93a7b0f/deploy-status)](https://app.netlify.com/sites/digital-market-square01/deploys)
