@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--white-color);
+  color: var(--main-color);
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in-out;
+}
+
 :root {
   --font-family-1: Poppins;
   --font-family-2: Allenoir;
@@ -13,7 +20,18 @@
   --main-text-color: #646464;
   --main-text-color2: #cdc4d9;
   --white-color: #fefefe;
+  --dark-theme: #ffff;
   --dark-mode: #000;
+}
+
+.dark-mode {
+  --primary-color1: #750750;
+  --primary-color2: #ff9900;
+  --main-text-color: #646464;
+  --main-text-color2: #cdc4d9;
+  --white-color: #fefefe;
+  --dark-theme: #000;
+  --dark-mode: #fefefe;
 }
 i {
   color: #;
@@ -23,10 +41,10 @@ body {
   font-family: "poppins", sans-serif;
 }
 
-.dms-bg{
+.dms-bg {
   color: var(--primary-color1);
 }
- .dms-text{
+.dms-text {
   color: var(--white-color);
   font-weight: 400;
 }
@@ -68,6 +86,11 @@ ul li {
   margin-top: 40px;
 }
 
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -80,6 +103,19 @@ img {
   border: none;
   font-size: 15px;
   font-weight: 500;
+}
+
+.theme-btn {
+  margin-left: 1em;
+  border: 1px solid var(--primary-color1);
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.light-mode {
+  color: var(--dark-mode);
+  background: var(--white-color);
 }
 
 .navbar {
@@ -367,24 +403,25 @@ img {
   border: 2px solid var(--main-color);
 }
 
-.dmsvision{
+.dmsvision {
   margin-top: 5rem;
 }
 
-.dmsvision-content{
+.dmsvision-content {
   text-align: center;
   padding-top: 3rem;
 }
 
-.dmsvision-content img{
+.dmsvision-content img {
   border-radius: 15px 5px;
-  width: 70vw;
-  height: 80vh;
+  /* width: 70vw;
+  height: 80vh; */
 }
 /* Mission ends*/
 
 /* Core */
 .dmscore {
+  background-color: var(--dark-theme);
 }
 
 .dmscore-section-content {
@@ -500,8 +537,6 @@ footer {
   overflow: hidden;
 }
 
-
-
 .dmsfooter {
   margin-left: 0;
   margin-right: 0;
@@ -538,7 +573,7 @@ footer {
   color: #fff;
   font-weight: bold;
 }
-.footer-widgets p{
+.footer-widgets p {
   margin-bottom: 20px;
 }
 
@@ -596,22 +631,3 @@ footer {
   font-size: 14px;
 }
 /* footer */
-
-@media (min-width: 1200px) {
-  .navbar-expand-xl .navbar-nav {
-    margin-left: 30%;
-  }
-}
-
-@media screen and (max-width: 678px) {
-  .thumbnail {
-    justify-content: start;
-  }
-
-  .slider .list .item .content h2 {
-    font-size: 60px;
-  }
-  .arrows {
-    top: 10%;
-  }
-}

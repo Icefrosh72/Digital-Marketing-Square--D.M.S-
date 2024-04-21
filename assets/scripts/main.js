@@ -141,9 +141,8 @@ $(".mission-slides").owlCarousel({
   },
 });
 
-
 // Services Slides
-$('.dmscore-slides').owlCarousel({
+$(".dmscore-slides").owlCarousel({
   loop: true,
   nav: false,
   dots: true,
@@ -155,20 +154,19 @@ $('.dmscore-slides').owlCarousel({
 
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     768: {
-      items: 2
+      items: 2,
     },
     1024: {
-      items: 3
+      items: 3,
     },
     1200: {
-      items: 3
-    }
-  }
+      items: 3,
+    },
+  },
 });
-
 
 // Slides
 $(".dmscase-slides").owlCarousel({
@@ -220,4 +218,11 @@ $(".dmspartner-slides").owlCarousel({
       items: 4,
     },
   },
+});
+
+// Toggle theme
+const themeMode = document.querySelector(".theme-btn");
+themeMode.addEventListener("click", () => {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
 });
